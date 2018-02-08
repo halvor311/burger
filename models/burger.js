@@ -1,7 +1,7 @@
 var orm = require("../config/orm");
-var cat = {
+var burgers = {
     all: function(cb) {
-      orm.all("cats", function(res) {
+      orm.all("burgers", function(res) {
         cb(res);
       });
     },
@@ -13,11 +13,6 @@ var cat = {
     },
     update: function(objColVals, condition, cb) {
       orm.update("burgers", objColVals, condition, function(res) {
-        cb(res);
-      });
-    },
-    delete: function(condition, cb) {
-      orm.delete("burgers", condition, function(res) {
         cb(res);
       });
     }
