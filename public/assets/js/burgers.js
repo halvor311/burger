@@ -1,6 +1,6 @@
 // front end javascript
 $(function(){
-    $("#eat-me").on("click", function(event){
+    $("#submit").on("click", function(event){
         var id = $(this).data("id");
         var devoured = true;
         var devouredState = {
